@@ -34,12 +34,12 @@ def start(message):
         db_object.execute("INSERT INTO users(id, username, messages) VALUES (%s, %s, %s)", (user_id, username, 0))
         db_connection.commit()
 
-    update_messages_count(user_id)
+    update_message_count(user_id)
 
 @bot.message_handler(func=lambda messaage: True, content_types=["text"])
 def message_from_user(message):
     user_id = message.from_user.id
-    update_messages_count(user_id)
+    update_message_count(user_id)
 
 
 @server.route(f"/{BOT_TOKEN}", methods=["POST"])
