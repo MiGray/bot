@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b01437f2-2b0f-4c80-bc3b-a6f32a2221c8" name="Default Changelist" comment="" />
+    <list default="true" id="b01437f2-2b0f-4c80-bc3b-a6f32a2221c8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +19,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/bot" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="29kqFzlGFPp6s2EoUOjzLIe2wWH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -45,5 +49,9 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="605" y="307" key="#com.intellij.fileTypes.FileTypeChooser/1680.0.1680.1010/0.0.1680.1010@0.0.1680.1010" timestamp="1653668836858" />
+    <state x="536" y="328" key="com.intellij.ide.util.TipDialog" timestamp="1653670341839">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="536" y="328" key="com.intellij.ide.util.TipDialog/1680.0.1680.1010/0.0.1680.1010@0.0.1680.1010" timestamp="1653670341839" />
   </component>
 </project>
