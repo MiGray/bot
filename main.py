@@ -6,6 +6,8 @@ import psycopg2
 from flask import Flask, request
 
 BOTTOKEN = os.environ.get('BOT_TOKEN', None)
+DBURI = os.environ.get('DB_URI', None)
+APPURL = os.environ.get('APP_URL', None)
 
 
 bot = telebot.TeleBot(BOTTOKEN)
@@ -14,7 +16,7 @@ logger = telebot.logger
 logger.setLevel(logging.DEBUG)
 
 
-db_connection = psycopg2.connect(DB_URI, sslmode="require")
+db_connection = psycopg2.connect(DBURI, sslmode="require")
 db_object = db_connection.cursor()
 
 
@@ -54,5 +56,5 @@ def redirect_message():
 
 if __name__ == "__main__":
     bot.remove_webhook()
-    bot.set_webhook(url=APP_URL)
+    bot.set_webhook(url=APPURL)
     server.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
