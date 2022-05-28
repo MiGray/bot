@@ -5,8 +5,10 @@ import psycopg2
 #from config import *
 from flask import Flask, request
 
+BOTTOKEN = os.environ.get('BOT_TOKEN', None)
 
-bot = telebot.TeleBot(BOT_TOKEN)
+
+bot = telebot.TeleBot(BOTTOKEN)
 server = Flask(__name__)
 logger = telebot.logger
 logger.setLevel(logging.DEBUG)
@@ -42,7 +44,7 @@ def message_from_user(message):
     update_message_count(user_id)
 
 
-@server.route(f"/{BOT_TOKEN}", methods=["POST"])
+@server.route(f"/{BOTTOKEN}", methods=["POST"])
 def redirect_message():
     json_string = request.get_data().decode("utf-8")
     update = telebot.types.Update.de_json(json_string)
