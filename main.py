@@ -2,8 +2,8 @@ import os
 import telebot
 import logging
 import psycopg2
-#from config import *
 from flask import Flask, request
+
 
 BOTTOKEN = os.environ.get('BOT_TOKEN', None)
 DBURI = os.environ.get('DB_URI', None)
