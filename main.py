@@ -2,7 +2,7 @@ import os
 import telebot
 import logging
 import psycopg2
-from config import *
+#from config import *
 from flask import Flask, request
 
 
